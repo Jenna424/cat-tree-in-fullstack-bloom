@@ -20,7 +20,7 @@
 
 - Programming Languages/Frameworks: Mongoose, Express, React, Node
 - Styling and Images: Google Fonts, Unsplash, Imgur
-- Project Planning: [Trello](https://trello.com/b/epBBCv9g/trello-for-cat-tree-in-fullstack-bloom)., [draw.io](https://app.diagrams.net/#G1dBTJdNk_QCf82u9d3J-7KtiithWb-Ohq)
+- Project Planning: [Trello](https://trello.com/b/epBBCv9g/trello-for-cat-tree-in-fullstack-bloom), [draw.io](https://app.diagrams.net/#G1dBTJdNk_QCf82u9d3J-7KtiithWb-Ohq)
 - Development Tools: Visual Studio Code
 
 ---
