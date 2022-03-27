@@ -18,7 +18,7 @@
 
 ### **_Technologies Used_**
 
-- Technologies: Mongoose, Express, React, Node, HTML, CSS, JavaScript
+- Technologies: MongoDB, Mongoose, Express, React, Node, HTML, CSS, JavaScript
 - Styling and Images: Google Fonts, Unsplash, Imgur
 - Project Planning: [Trello](https://trello.com/b/epBBCv9g/trello-for-cat-tree-in-fullstack-bloom), [draw.io](https://app.diagrams.net/#G1dBTJdNk_QCf82u9d3J-7KtiithWb-Ohq)
 - Development Tools: Visual Studio Code
@@ -35,6 +35,7 @@
 
 - [ ] Render a details page for each cat
 - [ ] Filter cats by characteristics
+- [ ] User authentication
 
 ---
 
