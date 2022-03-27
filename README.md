@@ -18,7 +18,7 @@
 
 ### **_Technologies Used_**
 
-- Programming Languages/Frameworks: Mongoose, Express, React, Node
+- Technologies: Mongoose, Express, React, Node, HTML, CSS, JavaScript
 - Styling and Images: Google Fonts, Unsplash, Imgur
 - Project Planning: [Trello](https://trello.com/b/epBBCv9g/trello-for-cat-tree-in-fullstack-bloom), [draw.io](https://app.diagrams.net/#G1dBTJdNk_QCf82u9d3J-7KtiithWb-Ohq)
 - Development Tools: Visual Studio Code
@@ -33,8 +33,8 @@
 
 ### **_Future Updates_**
 
+- [ ] Render a details page for each cat
 - [ ] Filter cats by characteristics
-- [ ] Enable the transfer of cats between shelters
 
 ---
 
