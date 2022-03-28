@@ -28,6 +28,14 @@ const main = async () => {
   })
   await shelter3.save()
 
+  const shelter4 = await new Shelter({
+    name: "Garfield's Grounds",
+    location: 'Garwood, New Jersey',
+    cats: [],
+    catCount: 0
+  })
+  await shelter4.save()
+
   const cat1 = await new Cat({
     name: 'Seymour',
     breed: 'Maine Coon',
