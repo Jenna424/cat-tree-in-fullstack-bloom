@@ -1,5 +1,14 @@
 const { Shelter, Cat } = require('../models')
 
+const getAllShelters = async (req, res) => {
+  try {
+    const shelters = await Shelter.find()
+    return res.status(200).json({ shelters })
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
+
 const createCat = async (req, res) => {
   try {
     const shelterId = req.body.shelter
@@ -21,5 +30,6 @@ const createCat = async (req, res) => {
 }
 
 module.exports = {
+  getAllShelters,
   createCat
 }
