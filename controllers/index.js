@@ -40,8 +40,32 @@ const getCatsInShelter = async (req, res) => {
   }
 }
 
+const deleteCat = async (req, res) => {
+  try {
+    const { id } = req.params
+    const deletedCat = await Cat.findByIdAndDelete(id)
+    if (deletedCat) {
+      const shelterId = deletedCat.shelter
+      const shelter = await Shelter.findById(shelterId)
+      // Update the shelter's cats to remove the deleted cat, and decrement the catCount
+      const remainingCats = shelter.cats.filter((catId) => {
+        return catId.toString() !== deletedCat._id.toString()
+      })
+      shelter.cats = remainingCats
+      shelter.catCount = shelter.catCount - 1
+      await shelter.save()
+      return res.status(200).send('A cat was removed from the shelter!')
+    } else {
+      throw new Error('Cat not found')
+    }
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
+
 module.exports = {
   getAllShelters,
   createCat,
-  getCatsInShelter
+  getCatsInShelter,
+  deleteCat
 }
