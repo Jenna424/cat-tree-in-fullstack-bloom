@@ -55,9 +55,9 @@ const main = async () => {
   const cat1 = await new Cat({
     name: 'Seymour',
     breed: 'Maine Coon',
-    color: 'white, red, and silver',
+    color: 'white',
     temperament: 'outgoing',
-    image: 'https://i.imgur.com/xVao9ik.jpeg',
+    image: 'https://i.imgur.com/i0fMFfi.jpeg',
     shelter: shelter1._id
   })
   await cat1.save()
