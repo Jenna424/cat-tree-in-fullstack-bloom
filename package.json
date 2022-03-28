@@ -1,0 +1,23 @@
+{
+  "name": "cat-tree-in-fullstack-bloom",
+  "version": "1.0.0",
+  "description": "## Date: 3/27/2022",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jenna424/cat-tree-in-fullstack-bloom.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jenna424/cat-tree-in-fullstack-bloom/issues"
+  },
+  "homepage": "https://github.com/Jenna424/cat-tree-in-fullstack-bloom#readme",
+  "dependencies": {
+    "mongoose": "^6.2.8"
+  }
+}
