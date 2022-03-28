@@ -26,7 +26,7 @@ const createCat = async (req, res) => {
     return res.status(500).json({ error: error.message })
   }
 }
-// Fetches all cats in a particular shelter
+
 const getCatsInShelter = async (req, res) => {
   try {
     const shelter = await Shelter.findById(req.params.id)
@@ -34,7 +34,7 @@ const getCatsInShelter = async (req, res) => {
     for await (const catId of shelter.cats) {
       shelterCats.push(await Cat.findById(catId))
     }
-    return res.status(201).json({ shelterCats })
+    return res.status(201).json(shelterCats)
   } catch (error) {
     return res.status(500).send(error.message)
   }
@@ -42,5 +42,6 @@ const getCatsInShelter = async (req, res) => {
 
 module.exports = {
   getAllShelters,
-  createCat
+  createCat,
+  getCatsInShelter
 }
