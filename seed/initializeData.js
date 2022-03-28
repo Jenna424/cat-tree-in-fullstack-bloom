@@ -44,6 +44,14 @@ const main = async () => {
   })
   await shelter5.save()
 
+  const shelter6 = await new Shelter({
+    name: "Cynthia's Safe Haven",
+    location: 'Westfield, New Jersey',
+    cats: [],
+    catCount: 0
+  })
+  await shelter6.save()
+
   const cat1 = await new Cat({
     name: 'Seymour',
     breed: 'Maine Coon',
