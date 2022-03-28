@@ -36,6 +36,14 @@ const main = async () => {
   })
   await shelter4.save()
 
+  const shelter5 = await new Shelter({
+    name: "Penelope's Place",
+    location: 'Fanwood, New Jersey',
+    cats: [],
+    catCount: 0
+  })
+  await shelter5.save()
+
   const cat1 = await new Cat({
     name: 'Seymour',
     breed: 'Maine Coon',
