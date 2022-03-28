@@ -19,7 +19,12 @@ const ShelterCats = () => {
 
   return (
     <div>
-      <h3>Cats Found in Shelter</h3>
+      <h2>Cats Found in Shelter</h2>
+      <div className="cat-cards-container">
+        {cats.map((cat) => (
+          <CatCard key={cat._id} {...cat} />
+        ))}
+      </div>
     </div>
   )
 }
