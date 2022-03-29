@@ -40,6 +40,17 @@ const getCatsInShelter = async (req, res) => {
   }
 }
 
+const updateCat = async (req, res) => {
+  try {
+    const cat = await Cat.findByIdAndUpdate(req.params.id, req.body, {
+      new: true
+    })
+    res.json(cat)
+  } catch (err) {
+    res.send(err.message)
+  }
+}
+
 const deleteCat = async (req, res) => {
   try {
     const { id } = req.params
@@ -67,5 +78,6 @@ module.exports = {
   getAllShelters,
   createCat,
   getCatsInShelter,
+  updateCat,
   deleteCat
 }
