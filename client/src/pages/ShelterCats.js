@@ -65,6 +65,7 @@ const ShelterCats = () => {
   return (
     <div>
       <CreateCatForm
+        newCat={newCat}
         handleInputChange={handleInputChange}
         createCat={createCat}
       />
