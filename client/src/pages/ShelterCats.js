@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
+import CatCard from '../components/CatCard'
 
 const ShelterCats = () => {
   let { id } = useParams()
