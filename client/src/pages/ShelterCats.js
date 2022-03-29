@@ -5,6 +5,14 @@ import CatCard from '../components/CatCard'
 
 const ShelterCats = () => {
   let { id } = useParams()
+  const [newCat, setNewCat] = useState({
+    name: '',
+    breed: '',
+    color: '',
+    temperament: '',
+    image: '',
+    shelter: id
+  })
   const [cats, setCats] = useState([])
 
   const getCatsByShelterId = async () => {
