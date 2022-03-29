@@ -96,6 +96,21 @@ const main = async () => {
   await shelter1.save()
 
   const cat4 = await new Cat({
+    name: 'Harry',
+    breed: 'Domestic Short Hair',
+    color: 'orange',
+    temperament: 'sleepy',
+    image:
+      'https://images.unsplash.com/photo-1548802673-380ab8ebc7b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80',
+    shelter: shelter2._id
+  })
+  await cat4.save()
+
+  shelter2.cats = [...shelter2.cats, cat4._id]
+  shelter2.catCount = shelter2.catCount + 1
+  await shelter2.save()
+
+  const cat5 = await new Cat({
     name: 'Nomi',
     breed: 'Domestic Medium Hair',
     color: 'fawn tabby',
@@ -103,9 +118,9 @@ const main = async () => {
     image: 'https://i.imgur.com/lYldoK5.jpeg',
     shelter: shelter2._id
   })
-  await cat4.save()
+  await cat5.save()
 
-  shelter2.cats = [...shelter2.cats, cat4._id]
+  shelter2.cats = [...shelter2.cats, cat5._id]
   shelter2.catCount = shelter2.catCount + 1
   await shelter2.save()
   console.log('seeded catSanctuaryDatabase')
