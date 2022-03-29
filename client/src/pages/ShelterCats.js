@@ -15,13 +15,6 @@ const ShelterCats = () => {
   })
   const [cats, setCats] = useState([])
 
-  const handleInputChange = (event) => {
-    setNewCat({
-      ...newCat,
-      [event.target.name]: event.target.value
-    })
-  }
-
   const getCatsByShelterId = async () => {
     const response = await axios.get(
       `http://localhost:3001/shelters/${id}/cats`
@@ -39,6 +32,13 @@ const ShelterCats = () => {
       .then(function (response) {
         getCatsByShelterId()
       })
+  }
+
+  const handleInputChange = (event) => {
+    setNewCat({
+      ...newCat,
+      [event.target.name]: event.target.value
+    })
   }
 
   const createCat = async (event) => {
