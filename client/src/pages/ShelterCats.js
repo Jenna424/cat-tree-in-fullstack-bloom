@@ -18,12 +18,20 @@ const ShelterCats = () => {
     getCatsByShelterId()
   }, [])
 
+  const deleteCat = async (id) => {
+    await axios
+      .delete(`http://localhost:3001/cats/${id}`)
+      .then(function (response) {
+        getCatsByShelterId()
+      })
+  }
+
   return (
     <div>
       <h2>Cats Found in Shelter</h2>
       <div className="cat-cards-container">
         {cats.map((cat) => (
-          <CatCard key={cat._id} {...cat} />
+          <CatCard key={cat._id} {...cat} deleteCat={deleteCat} />
         ))}
       </div>
     </div>
