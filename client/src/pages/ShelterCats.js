@@ -6,6 +6,7 @@ import CatCard from '../components/CatCard'
 
 const ShelterCats = () => {
   let { id } = useParams()
+  const [isFormHidden, setIsFormHidden] = useState(true)
   const [newCat, setNewCat] = useState({
     name: '',
     breed: '',
@@ -62,17 +63,42 @@ const ShelterCats = () => {
     })
   }
 
+  const toggleIsFormHidden = () => {
+    setIsFormHidden((prevState) => !prevState)
+  }
+
+  const updateCat = async (id) => {
+    await axios
+      .put(`http://localhost:3001/cats/${id}`, { name: 'Anonymous' })
+      .then(function (response) {
+        getCatsByShelterId()
+      })
+  }
+
   return (
-    <div>
-      <CreateCatForm
-        newCat={newCat}
-        handleInputChange={handleInputChange}
-        createCat={createCat}
-      />
+    <div className="shelter-cats-page">
+      <button
+        className="shelter-admission-form-btn"
+        onClick={toggleIsFormHidden}
+      >
+        {isFormHidden ? 'Show Admission Form' : 'Hide Admission Form'}
+      </button>
+      {!isFormHidden && (
+        <CreateCatForm
+          newCat={newCat}
+          handleInputChange={handleInputChange}
+          createCat={createCat}
+        />
+      )}
       <h2>Cats Found in Shelter</h2>
       <div className="cat-cards-container">
         {cats.map((cat) => (
-          <CatCard key={cat._id} {...cat} deleteCat={deleteCat} />
+          <CatCard
+            key={cat._id}
+            {...cat}
+            updateCat={updateCat}
+            deleteCat={deleteCat}
+          />
         ))}
       </div>
     </div>
