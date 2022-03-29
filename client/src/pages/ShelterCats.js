@@ -41,6 +41,26 @@ const ShelterCats = () => {
       })
   }
 
+  const createCat = async (event) => {
+    event.preventDefault()
+    await axios
+      .post('http://localhost:3001/cats', newCat)
+      .then(function (response) {
+        getCatsByShelterId()
+      })
+      .catch(function (error) {
+        console.log(error)
+      })
+    setNewCat({
+      name: '',
+      breed: '',
+      color: '',
+      temperament: '',
+      image: '',
+      shelter: id
+    })
+  }
+
   return (
     <div>
       <h2>Cats Found in Shelter</h2>
