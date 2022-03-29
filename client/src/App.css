@@ -139,6 +139,14 @@ form input[type='text'] {
   cursor: pointer;
 }
 
+.update-cat-btn {
+  margin-right: 3px;
+}
+
+.delete-cat-btn {
+  margin-left: 3px;
+}
+
 .update-cat-btn:disabled {
   color: #d8d2cb;
   background-color: #777777;
