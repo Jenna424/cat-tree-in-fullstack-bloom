@@ -94,3 +94,13 @@ form input[type='text'] {
   padding: 0.5em;
   width: 25em;
 }
+
+.cat-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 15px;
+  margin: 15px;
+  justify-items: center;
+  text-align: center;
+}
