@@ -10,6 +10,8 @@ router.get('/shelters/:id/cats', controllers.getCatsInShelter)
 
 router.post('/cats', controllers.createCat)
 
+router.put('/cats/:id', controllers.updateCat)
+
 router.delete('/cats/:id', controllers.deleteCat)
 
 module.exports = router
