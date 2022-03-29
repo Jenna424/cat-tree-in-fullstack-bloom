@@ -28,6 +28,7 @@ const CreateCatForm = ({ newCat, handleInputChange, createCat }) => {
           <br />
           <input name="image" type="text" onChange={handleInputChange} placeholder="Enter image path..." value={newCat.image} />
         </div>
+        <input type="submit" />
       </form>
     </div>
   )
