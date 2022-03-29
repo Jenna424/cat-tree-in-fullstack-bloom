@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
+import CreateCatForm from '../components/CreateCatForm'
 import CatCard from '../components/CatCard'
 
 const ShelterCats = () => {
@@ -63,6 +64,10 @@ const ShelterCats = () => {
 
   return (
     <div>
+      <CreateCatForm
+        handleInputChange={handleInputChange}
+        createCat={createCat}
+      />
       <h2>Cats Found in Shelter</h2>
       <div className="cat-cards-container">
         {cats.map((cat) => (
