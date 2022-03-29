@@ -87,13 +87,13 @@ const main = async () => {
     color: 'black and white',
     temperament: 'mischievous',
     image: 'https://i.imgur.com/wKZi5fm.jpeg',
-    shelter: shelter2._id
+    shelter: shelter1._id
   })
   await cat3.save()
 
-  shelter2.cats = [...shelter2.cats, cat3._id]
-  shelter2.catCount = shelter2.catCount + 1
-  await shelter2.save()
+  shelter1.cats = [...shelter1.cats, cat3._id]
+  shelter1.catCount = shelter1.catCount + 1
+  await shelter1.save()
 
   const cat4 = await new Cat({
     name: 'Nomi',
