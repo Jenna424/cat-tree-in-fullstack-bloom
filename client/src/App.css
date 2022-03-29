@@ -54,3 +54,23 @@ a {
   transform: scale(1.02);
   background-color: #c7a761;
 }
+
+.shelter-cats-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.shelter-admission-form-btn {
+  margin: 20px;
+  padding: 5px;
+  cursor: pointer;
+  background-color: #d4f1ff;
+  border-radius: 5px;
+  border: none;
+}
+
+.shelter-admission-form-btn:hover {
+  background-color: #a9d4e9;
+}
