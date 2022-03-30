@@ -67,6 +67,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url('https://images.unsplash.com/photo-1487147264018-f937fba0c817?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2787&q=80');
 }
 
 .shelter-admission-form-btn,
