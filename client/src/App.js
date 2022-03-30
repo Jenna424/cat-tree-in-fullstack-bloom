@@ -4,7 +4,6 @@ import Home from './pages/Home'
 import About from './pages/About'
 import ShelterCats from './pages/ShelterCats'
 import './App.css'
-// import './Style.css'
 
 const App = () => {
   return (
