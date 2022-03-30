@@ -135,14 +135,15 @@ form input[type='text'] {
 
 .cat-card button {
   color: inherit;
-  background-color: #e3c9bd;
+  background-color: #ccbcc8;
   padding: 10px;
   border: none;
   border-radius: 5px;
 }
 
 .cat-card button:hover {
-  background-color: #accaa1;
+  color: white;
+  background-color: #a89ba5;
   cursor: pointer;
 }
 
