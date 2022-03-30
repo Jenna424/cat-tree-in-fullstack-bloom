@@ -134,6 +134,7 @@ form input[type='text'] {
 }
 
 .cat-card button {
+  color: inherit;
   background-color: #b8d1ae;
   padding: 10px;
   border: none;
