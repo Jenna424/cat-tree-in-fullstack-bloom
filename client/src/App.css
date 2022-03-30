@@ -188,7 +188,7 @@ form input[type='text'] {
   box-shadow: 0 0 0.8em black;
 }
 
-.instructions {
+.instructions-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -200,7 +200,7 @@ form input[type='text'] {
   font-weight: bold;
 }
 
-.instructions-paragraph {
+.instructions-intro-paragraph {
   font-size: 18px;
   text-decoration: underline;
   margin: 20px 0;
