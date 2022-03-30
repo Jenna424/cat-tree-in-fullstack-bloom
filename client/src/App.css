@@ -75,14 +75,16 @@ input[type='submit'] {
   margin: 15px;
   padding: 5px;
   cursor: pointer;
-  background-color: #d4f1ff;
+  color: inherit;
+  background-color: #ccbcc8;
   border-radius: 5px;
   border: none;
 }
 
 .shelter-admission-form-btn:hover,
 input[type='submit']:hover {
-  background-color: #a9d4e9;
+  color: white;
+  background-color: #a89ba5;
 }
 
 .form-container {
