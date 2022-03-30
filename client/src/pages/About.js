@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <div className="about-page-wrapper">
-      <h1 className="title">Cat Tree in Fullstack Bloom</h1>
+      <h1>Cat Tree in Fullstack Bloom</h1>
       <h4>
         <em>
           An app that facilitates the transfer of rescue cats from shelters to
@@ -16,8 +16,8 @@ const About = () => {
             alt="cat tree"
           />
         </div>
-        <div className="instructions">
-          <p className="instructions-paragraph">
+        <div className="instructions-wrapper">
+          <p className="instructions-intro-paragraph">
             Please follow the instructions below:
           </p>
           <p>Access information about each cat sanctuary on the homepage.</p>
@@ -27,7 +27,7 @@ const About = () => {
             on button click.
           </p>
           <p>
-            Change a cat’s name to ‘Anonymous’, in case its new family wishes to
+            Change a cat's name to "Anonymous," in case its new family wishes to
             rename it.
           </p>
           <p>
