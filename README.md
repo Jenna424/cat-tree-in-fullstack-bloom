@@ -31,6 +31,13 @@
 
 ---
 
+### **_Screenshots_**
+![Image](https://github.com/Jenna424/cat-tree-in-fullstack-bloom/blob/main/screenshots/AboutPage.png?raw=true)
+
+![Image](https://github.com/Jenna424/cat-tree-in-fullstack-bloom/blob/main/screenshots/ShelterCatsPage.png?raw=true)
+
+---
+
 ### **_Future Updates_**
 
 - [ ] Render a details page for each cat
