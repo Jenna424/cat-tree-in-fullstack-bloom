@@ -42,7 +42,7 @@
 ### **_Future Updates_**
 
 - [ ] Render a details page for each cat
-- [ ] Create edit form to update name of cat
+- [ ] Create edit form to update name of cat (to replace button that changes a cat's name to "Anonymous")
 - [ ] User authentication
 
 ---
