@@ -9,7 +9,7 @@ const About = () => {
         </em>
       </h4>
       <div className="about-page-body">
-        <div className="cat-tree-image-wrapper">
+        <div className="cat-tree-img-wrapper">
           <img
             className="cat-tree-img"
             src="https://i.imgur.com/U3GcEQ4.jpeg"
