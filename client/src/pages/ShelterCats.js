@@ -18,9 +18,7 @@ const ShelterCats = () => {
   const [cats, setCats] = useState([])
 
   const getCatsByShelterId = async () => {
-    const response = await axios.get(
-      `http://localhost:3001/shelters/${id}/cats`
-    )
+    const response = await axios.get(`/shelters/${id}/cats`)
     setCats(response.data)
   }
 
@@ -29,11 +27,9 @@ const ShelterCats = () => {
   }, [])
 
   const deleteCat = async (id) => {
-    await axios
-      .delete(`http://localhost:3001/cats/${id}`)
-      .then(function (response) {
-        getCatsByShelterId()
-      })
+    await axios.delete(`/cats/${id}`).then(function (response) {
+      getCatsByShelterId()
+    })
   }
 
   const handleInputChange = (event) => {
@@ -46,7 +42,7 @@ const ShelterCats = () => {
   const createCat = async (event) => {
     event.preventDefault()
     await axios
-      .post('http://localhost:3001/cats', newCat)
+      .post('/cats', newCat)
       .then(function (response) {
         getCatsByShelterId()
       })
@@ -69,7 +65,7 @@ const ShelterCats = () => {
 
   const updateCat = async (id) => {
     await axios
-      .put(`http://localhost:3001/cats/${id}`, { name: 'Anonymous' })
+      .put(`/cats/${id}`, { name: 'Anonymous' })
       .then(function (response) {
         getCatsByShelterId()
       })

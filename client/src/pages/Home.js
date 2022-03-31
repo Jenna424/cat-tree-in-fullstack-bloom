@@ -7,7 +7,7 @@ const Home = () => {
   const [shelters, setShelters] = useState([])
 
   const fetchShelters = async () => {
-    const response = await axios.get('http://localhost:3001/shelters')
+    const response = await axios.get('/shelters')
     setShelters(response.data.shelters)
   }
 
