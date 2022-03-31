@@ -59,10 +59,10 @@ const deleteCat = async (req, res) => {
       const shelterId = deletedCat.shelter
       const shelter = await Shelter.findById(shelterId)
       // Update the shelter's cats to remove the deleted cat, and decrement the catCount
-      const remainingCats = shelter.cats.filter((catId) => {
+      const remainingCatIds = shelter.cats.filter((catId) => {
         return catId.toString() !== deletedCat._id.toString()
       })
-      shelter.cats = remainingCats
+      shelter.cats = remainingCatIds
       shelter.catCount = shelter.catCount - 1
       await shelter.save()
       return res.status(200).send('A cat was removed from the shelter!')
