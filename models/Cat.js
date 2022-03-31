@@ -6,7 +6,7 @@ const Cat = new Schema(
     color: { type: String, required: true },
     temperament: { type: String, required: true },
     image: { type: String, required: true },
-    shelter: { type: Schema.Types.ObjectId, ref: 'Shelter', required: false }
+    shelter: { type: Schema.Types.ObjectId, ref: 'Shelter', required: true }
   },
   { timestamps: true }
 )
