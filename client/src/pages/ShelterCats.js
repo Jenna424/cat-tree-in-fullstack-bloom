@@ -59,7 +59,6 @@ const ShelterCats = () => {
     })
   }
 
-  // Shows/hides the form
   const toggleIsFormHidden = () => {
     setIsFormHidden((prevState) => !prevState)
   }
