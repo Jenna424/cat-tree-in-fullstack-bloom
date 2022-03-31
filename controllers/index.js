@@ -34,7 +34,7 @@ const getCatsInShelter = async (req, res) => {
     for await (const catId of shelter.cats) {
       shelterCats.push(await Cat.findById(catId))
     }
-    return res.status(201).json(shelterCats)
+    return res.status(200).json(shelterCats)
   } catch (error) {
     return res.status(500).send(error.message)
   }
