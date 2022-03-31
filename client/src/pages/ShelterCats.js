@@ -53,6 +53,7 @@ const ShelterCats = () => {
       .catch(function (error) {
         console.log(error)
       })
+    // Clears the create cat form fields
     setNewCat({
       name: '',
       breed: '',
