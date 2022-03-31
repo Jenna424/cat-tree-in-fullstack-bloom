@@ -32,6 +32,7 @@
 ---
 
 ### **_Screenshots_**
+
 ![Image](https://github.com/Jenna424/cat-tree-in-fullstack-bloom/blob/main/screenshots/AboutPage.png?raw=true)
 
 ![Image](https://github.com/Jenna424/cat-tree-in-fullstack-bloom/blob/main/screenshots/ShelterCatsPage.png?raw=true)
@@ -41,12 +42,16 @@
 ### **_Future Updates_**
 
 - [ ] Render a details page for each cat
-- [ ] Filter cats by characteristics
+- [ ] Create edit form to update name of cat
 - [ ] User authentication
 
 ---
 
 ### **_Credits_**
+
+##### **Unsplash (for background image):** [unsplash.com](https://unsplash.com/)
+
+##### **Imgur (for cat images):** [imgur.com](https://imgur.com/)
 
 ##### **MDN Documentation:** [mozilla.org](https://developer.mozilla.org/en-US/docs/Learn/JavaScript)
 
