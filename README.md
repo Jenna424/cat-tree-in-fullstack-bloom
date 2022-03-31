@@ -27,7 +27,7 @@
 
 ### **_Getting Started_**
 
-##### Fork and clone this repository and cd into cat-tree-in-fullstack-bloom/ project directory. In one terminal, run the command npm run dev. In another terminal, cd into client/ directory and run npm start. Begin exploring shelters and cats in your browser!
+##### Fork and clone this repository and cd into cat-tree-in-fullstack-bloom/ project directory. In one terminal, seed the database by running the command node seed/initializeData.js. Then run the command npm run dev. In another terminal, cd into client/ directory and run npm start. Begin exploring shelters and cats in your browser!
 
 ---
 
