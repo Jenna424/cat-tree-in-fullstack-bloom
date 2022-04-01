@@ -12,7 +12,7 @@
 
 ##### The app "Cat Tree in Fullstack Bloom," created for Project 2 of GA's SEIR, enables animal rescue organizations to keep track of cats that are currently under their care and are available for adoption. Geared toward shelter directors and adoption coordinators, the app facilitates the transfer of rescue cats from animal shelters to their fur-ever homes. Users can access cat sanctuaries and view cats that are found in a particular shelter. They can add a cat to a shelter, update the name of a cat, and remove a cat from a shelter.
 
-##### Navigate to [the live site](https://cat-tree-in-fullstack-bloom.herokuapp.com/) to view shelters and cats.
+##### Navigate to [the deployed site](https://cat-tree-in-fullstack-bloom.herokuapp.com/) to view shelters and cats.
 
 ---
 
